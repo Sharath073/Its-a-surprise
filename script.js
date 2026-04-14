@@ -13,19 +13,19 @@ const noTexts = [
     "You're breaking my heart! 💔"
 ];
 
-// The sequence of questions and corresponding GIFs
+// Updated sequence of questions and corresponding LOCAL GIFs
 const sequence = [
     {
         q: "Are you ready for it?",
-        gif: "https://media.tenor.com/8QzX9nK7b1sAAAAj/cat-cute.gif"
+        gif: "cat-cute.gif" 
     },
     {
         q: "First... do you love me?",
-        gif: "https://media.tenor.com/EPbI70NqE2kAAAAj/cat-heart.gif"
+        gif: "cat-heart.gif" 
     },
     {
         q: "A lot? Like, the most in the whole world?",
-        gif: "https://media.tenor.com/bTzMB05L-SgAAAAj/cat-hug.gif"
+        gif: "cat-hug.gif" 
     }
 ];
 
@@ -61,7 +61,9 @@ yesBtn.addEventListener('click', () => {
     } else {
         // The Final Birthday Message!
         questionText.innerHTML = "HAPPY 20TH BIRTHDAY! 🎂💖<br><br>You are the most amazing girlfriend ever. I love you so much! 🎉";
-        catGif.src = "https://media.tenor.com/V4P0YhT7jToAAAAj/cat-party.gif";
+        
+        // Using the local party GIF
+        catGif.src = "cat-party.gif"; 
         
         // Hide the Yes/No buttons
         btnGroup.style.display = 'none';
